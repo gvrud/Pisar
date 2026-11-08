@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Pisar.Splash" parent="Base.Theme.Pisar">
+        <item name="android:windowSplashScreenBackground">@color/parchment</item>
+        <item name="android:windowSplashScreenAnimatedIcon">@mipmap/ic_launcher</item>
+        <item name="android:windowSplashScreenIconBackgroundColor">@color/parchment</item>
+        <item name="android:windowBackground">@color/parchment</item>
+        <item name="android:statusBarColor">@color/parchment</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+</resources>

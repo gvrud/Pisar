@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Писарь</string>
+    <string name="splash_subtitle">Офлайн-расшифровка речи</string>
+    <string name="splash_offline">Работает без интернета</string>
+    <string name="search_hint">Поиск по расшифровкам</string>
+    <string name="search_empty">Ничего не найдено</string>
+    <string name="search_empty_hint">Попробуйте другое слово</string>
+    <string name="search_results">Найдено: %1$d</string>
+    <string name="help_title">Справка</string>
+    <string name="help_body">Писарь — офлайн-расшифровка речи.
+
+1. Модель распознавания
+Приложение не содержит модель внутри APK. Один раз скачайте на компьютере архив vosk-model-small-ru-0.22.zip (около 45 МБ) с сайта alphacephei.com/vosk/models, перекиньте файл на телефон и откройте меню «Модель распознавания» → «Импортировать модель (.zip)». После импорта интернет не нужен. Можно хранить несколько моделей и переключаться между ними. На устройствах с 4+ ГБ ОЗУ имеет смысл большая модель vosk-model-ru-0.42.
+
+2. Аудиофайл
+Кнопка «Файл» открывает системный выбор. Поддерживаются MP3, M4A/AAC, WAV, FLAC, OGG/Vorbis, OGG/Opus, AMR/AWB, 3GP.
+
+3. Голосовая заметка
+Кнопка «Запись»: говорите, затем «Остановить и распознать». Запись обрабатывается на устройстве.
+
+4. Результат
+Полная транскрипция с пунктуацией по паузам и краткое содержание: тезисы и ключевые слова. Суммаризация экстрактивная — это отбор важных предложений, а не пересказ своими словами.
+
+5. Поиск
+Лупа в верхней панели ищет по названиям, расшифровкам и краткому содержанию. Совпадения подсвечиваются, под записью показывается фрагмент.
+
+6. Экспорт
+Кнопки TXT и DOCX на экране расшифровки открывают системное меню «Поделиться». Файлы создаются в кэше приложения.
+
+7. Приватность
+В приложении нет разрешения INTERNET: аудио и текст не покидают устройство. Сервисы Google Play не требуются.
+
+8. Ограничения
+На устройстве с 2 ГБ ОЗУ стабильно работает малая модель Vosk. Точность зависит от шума и дикции. Длинные файлы обрабатываются потоково, память не растёт.
+
+9. Данные
+Расшифровки хранятся в приватном каталоге приложения. Удаление записи удаляет и аудио.</string>
+
+    <string name="action_import">Файл</string>
+    <string name="action_record">Запись</string>
+    <string name="action_share">Поделиться</string>
+    <string name="action_copy">Копировать</string>
+    <string name="action_delete">Удалить</string>
+    <string name="action_cancel">Отмена</string>
+    <string name="action_stop">Стоп</string>
+    <string name="action_open">Открыть</string>
+    <string name="action_share_txt">Поделиться TXT</string>
+    <string name="action_share_docx">Поделиться DOCX</string>
+    <string name="action_model">Модель распознавания</string>
+    <string name="action_import_model">Импортировать модель (.zip)</string>
+    <string name="action_retry">Повторить</string>
+
+    <string name="empty_title">Пока пусто</string>
+    <string name="empty_text">Добавьте аудиофайл или запишите голосовую заметку. Всё распознавание идёт на устройстве, без интернета.</string>
+
+    <string name="status_queued">В очереди</string>
+    <string name="status_preparing">Подготовка модели</string>
+    <string name="status_decoding">Декодирование звука</string>
+    <string name="status_transcribing">Распознавание речи</string>
+    <string name="status_summarizing">Суммаризация</string>
+    <string name="status_done">Готово</string>
+    <string name="status_error">Ошибка</string>
+    <string name="status_canceled">Отменено</string>
+
+    <string name="job_title">Расшифровка</string>
+    <string name="job_transcript">Транскрипция</string>
+    <string name="job_summary">Краткое содержание</string>
+    <string name="job_keywords">Ключевые слова</string>
+    <string name="job_no_summary">Текст слишком короткий для краткого содержания.</string>
+    <string name="job_empty_transcript">Речь не распознана. Проверьте, что в записи есть речь, и попробуйте снова.</string>
+    <string name="job_meta">%1$s · %2$s</string>
+
+    <string name="record_title">Голосовая заметка</string>
+    <string name="record_hint">Нажмите кнопку и говорите. Запись обрабатывается на устройстве.</string>
+    <string name="record_start">Начать запись</string>
+    <string name="record_stop">Остановить и распознать</string>
+    <string name="record_running">Идёт запись…</string>
+    <string name="record_too_short">Запись слишком короткая</string>
+    <string name="record_denied">Без доступа к микрофону запись невозможна</string>
+    <string name="record_error">Не удалось начать запись: %1$s</string>
+    <string name="record_keep_screen">Не блокируйте экран во время записи</string>
+
+    <string name="model_title">Модель распознавания</string>
+    <string name="model_installed">Модель установлена: %1$s</string>
+    <string name="model_missing">Модель не установлена</string>
+    <string name="model_missing_hint">Скачайте на компьютере архив vosk-model-small-ru-0.22.zip (около 45 МБ) с сайта alphacephei.com/vosk/models, перекиньте файл на телефон и импортируйте его здесь. Интернет приложению не нужен.</string>
+    <string name="model_importing">Распаковка модели…</string>
+    <string name="model_imported">Модель установлена</string>
+    <string name="model_row">%1$s · %2$s</string>
+    <string name="model_delete_confirm">Удалить модель %1$s? Она занимает место во внутренней памяти.</string>
+    <string name="model_import_failed">Не удалось импортировать модель: %1$s</string>
+    <string name="model_delete">Удалить модель</string>
+    <string name="model_deleted">Модель удалена</string>
+    <string name="model_size">Занято на диске: %1$s</string>
+
+    <string name="notif_channel_name">Распознавание</string>
+    <string name="notif_channel_desc">Ход расшифровки аудио</string>
+    <string name="notif_channel_done">Готовые расшифровки</string>
+    <string name="notif_channel_done_desc">Уведомления о завершении</string>
+    <string name="notif_progress_title">Писарь: %1$s</string>
+    <string name="notif_done_title">Расшифровка готова</string>
+    <string name="notif_error_title">Не удалось расшифровать</string>
+
+    <string name="error_no_model">Модель распознавания не установлена. Откройте «Модель распознавания» и импортируйте архив.</string>
+    <string name="error_unsupported_audio">Формат файла не поддерживается. Поддерживаются WAV, MP3, M4A/AAC, FLAC, OGG/Opus, AMR.</string>
+    <string name="error_decode">Не удалось декодировать аудио: %1$s</string>
+    <string name="error_generic">Ошибка: %1$s</string>
+    <string name="error_out_of_memory">Не хватает памяти для этой записи. Попробуйте файл покороче.</string>
+    <string name="error_file_missing">Файл записи не найден</string>
+
+    <string name="dialog_delete_title">Удалить запись?</string>
+    <string name="dialog_delete_text">Расшифровка и аудиофайл будут удалены с устройства.</string>
+    <string name="dialog_cancel_job_title">Остановить обработку?</string>
+    <string name="dialog_cancel_job_text">Текущий прогресс будет потерян.</string>
+
+    <string name="summary_intro">Кратко</string>
+    <string name="copied">Скопировано</string>
+    <string name="share_chooser">Поделиться расшифровкой</string>
+    <string name="about_title">О приложении</string>
+    <string name="about_text">Писарь распознаёт речь и делает краткое содержание полностью на устройстве. Приложение не имеет доступа к интернету: в нём нет разрешения INTERNET. Работает без сервисов Google Play.</string>
+    <string name="stats_words">%1$d слов</string>
+    <string name="stats_chars">%1$d символов</string>
+
+    <string name="cd_mic">Микрофон</string>
+    <string name="cd_file">Файл</string>
+    <string name="cd_back">Назад</string>
+    <string name="player_play">Прослушать</string>
+    <string name="player_pause">Пауза</string>
+    <string name="player_stop">Остановить</string>
+    <string name="player_error">Не удалось воспроизвести аудио</string>
+</resources>

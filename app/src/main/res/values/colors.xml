@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="brand">#1F5F8B</color>
+    <color name="brand_dark">#123B58</color>
+    <color name="brand_light">#D6E5F0</color>
+    <color name="accent">#B4522A</color>
+    <color name="surface">#FFFBF7</color>
+    <color name="surface_dark">#12181C</color>
+    <color name="ink">#1B1B1B</color>
+    <color name="ink_secondary">#5C6670</color>
+    <color name="ok">#2E7D32</color>
+    <color name="warn">#B26A00</color>
+    <color name="err">#B3261E</color>
+    <color name="parchment">#F2E7D3</color>
+    <color name="parchment_dark">#E4D5BB</color>
+    <color name="ink_black">#141210</color>
+    <color name="highlight">#FFE08A</color>
+</resources>

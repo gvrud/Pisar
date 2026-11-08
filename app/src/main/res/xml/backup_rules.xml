@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content>
+    <include
+        domain="file"
+        path="jobs.json" />
+    <include
+        domain="file"
+        path="audio/" />
+</full-backup-content>
